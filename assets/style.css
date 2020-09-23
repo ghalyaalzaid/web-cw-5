@@ -11,6 +11,8 @@ body {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.808);
   height: 100%;
+  font-family: sofia;
+  
 }
 /* ---------- في كل مطلوب display: flex يجب اضافة ---------- */
 /* ------------- فقط flex عدل على تحت تعليقات  ------------- */
@@ -18,6 +20,8 @@ body {
 /* ---------------(الشريط الجانبي: المطلوب #1)-------------- */
 /* ---------------%اجعل الشريط الجانبي بطول 100------------- */
 .side-bar {
+  display: flex;
+  height: 100%;
   /* flex */
 }
 
@@ -25,9 +29,10 @@ body {
 /* ------------------%اجعل العنوان بعرض 100----------------- */
 /* --اجعل العناصر (المنيو، معرفة المزيد، تواصل) تظهر بالنص-- */
 .head-ul {
+  display: flex;
+  justify-content: center;
   /* flex */
 }
-
 
 /* ------------------(المحتوى: المطلوب #2)------------------ */
 /* ------------اجعل جميع عناصر المنيو تظهر بالنص------------ */
@@ -35,13 +40,17 @@ body {
 /* -------اجعل المسافة بين العناصر متساوية نفس الصورة------- */
 
 .menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgb(255, 255, 255);
   padding: 25px;
   height: 600px;
   width: 700px;
   margin-top: 50px;
   border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
   /* flex */
 }
 .header {
